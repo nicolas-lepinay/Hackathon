@@ -1,0 +1,138 @@
+[
+    {
+      "question": "À quelle fréquence utilisez-vous la voiture pour vos déplacements quotidiens ?",
+      "options": [
+        { "text": "Tous les jours", "score": 5 },
+        { "text": "Plusieurs fois par semaine", "score": 3 },
+        { "text": "Rarement", "score": 1 },
+        { "text": "Jamais", "score": 0 }
+      ]
+    },
+    {
+      "question": "Quelle source d’énergie utilisez-vous principalement chez vous ?",
+      "options": [
+        { "text": "Charbon/fioul", "score": 5 },
+        { "text": "Gaz", "score": 3 },
+        { "text": "Électricité", "score": 1 },
+        { "text": "Énergies renouvelables (solaire, éolien...)", "score": 0 }
+      ]
+    },
+    {
+      "question": "Combien de fois par semaine consommez-vous de la viande rouge ?",
+      "options": [
+        { "text": "Tous les jours", "score": 5 },
+        { "text": "Plusieurs fois par semaine", "score": 3 },
+        { "text": "Rarement", "score": 1 },
+        { "text": "Jamais", "score": 0 }
+      ]
+    },
+    {
+      "question": "Pratiquez-vous le tri sélectif chez vous ?",
+      "options": [
+        { "text": "Jamais", "score": 5 },
+        { "text": "Rarement", "score": 3 },
+        { "text": "Souvent", "score": 1 },
+        { "text": "Toujours", "score": 0 }
+      ]
+    },
+    {
+      "question": "Quelle est votre consommation d’eau en bouteille plastique ?",
+      "options": [
+        { "text": "Très élevée", "score": 5 },
+        { "text": "Assez élevée", "score": 3 },
+        { "text": "Faible", "score": 1 },
+        { "text": "Aucune (j’utilise une gourde/filtre)", "score": 0 }
+      ]
+    },
+    {
+      "question": "Avez-vous des appareils en veille la nuit ?",
+      "options": [
+        { "text": "Toujours", "score": 5 },
+        { "text": "Souvent", "score": 3 },
+        { "text": "Rarement", "score": 1 },
+        { "text": "Jamais", "score": 0 }
+      ]
+    },
+    {
+      "question": "À quelle fréquence prenez-vous l’avion ?",
+      "options": [
+        { "text": "Plus de 4 fois par an", "score": 5 },
+        { "text": "2 à 4 fois par an", "score": 3 },
+        { "text": "1 fois par an", "score": 1 },
+        { "text": "Jamais", "score": 0 }
+      ]
+    },
+    {
+      "question": "Utilisez-vous des sacs réutilisables pour vos courses ?",
+      "options": [
+        { "text": "Jamais", "score": 5 },
+        { "text": "Rarement", "score": 3 },
+        { "text": "Parfois", "score": 1 },
+        { "text": "Toujours", "score": 0 }
+      ]
+    },
+    {
+      "question": "Votre logement est-il bien isolé ?",
+      "options": [
+        { "text": "Pas du tout", "score": 5 },
+        { "text": "Peu", "score": 3 },
+        { "text": "Correctement", "score": 1 },
+        { "text": "Très bien", "score": 0 }
+      ]
+    },
+    {
+      "question": "Achetez-vous des produits locaux et de saison ?",
+      "options": [
+        { "text": "Jamais", "score": 5 },
+        { "text": "Rarement", "score": 3 },
+        { "text": "Souvent", "score": 1 },
+        { "text": "Toujours", "score": 0 }
+      ]
+    },
+    {
+      "question": "Utilisez-vous les transports en commun ?",
+      "options": [
+        { "text": "Jamais", "score": 5 },
+        { "text": "Rarement", "score": 3 },
+        { "text": "Souvent", "score": 1 },
+        { "text": "Très souvent", "score": 0 }
+      ]
+    },
+    {
+      "question": "Laissez-vous couler l’eau du robinet inutilement ?",
+      "options": [
+        { "text": "Oui, régulièrement", "score": 5 },
+        { "text": "Parfois", "score": 3 },
+        { "text": "Rarement", "score": 1 },
+        { "text": "Jamais", "score": 0 }
+      ]
+    },
+    {
+      "question": "Achetez-vous des vêtements d’occasion ?",
+      "options": [
+        { "text": "Jamais", "score": 5 },
+        { "text": "Rarement", "score": 3 },
+        { "text": "Parfois", "score": 1 },
+        { "text": "Régulièrement", "score": 0 }
+      ]
+    },
+    {
+      "question": "Votre consommation d’électricité provient-elle d’énergies vertes ?",
+      "options": [
+        { "text": "Non, et je ne compte pas changer", "score": 5 },
+        { "text": "Non, mais j’y songe", "score": 3 },
+        { "text": "Partiellement", "score": 1 },
+        { "text": "Oui, totalement", "score": 0 }
+      ]
+    },
+    {
+      "question": "À quelle température chauffez-vous votre logement l’hiver ?",
+      "options": [
+        { "text": "23°C ou plus", "score": 5 },
+        { "text": "21-22°C", "score": 3 },
+        { "text": "19-20°C", "score": 1 },
+        { "text": "18°C ou moins", "score": 0 }
+      ]
+    }
+  ]
+  

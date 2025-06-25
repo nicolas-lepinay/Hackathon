@@ -1,0 +1,38 @@
+.App {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    max-width: 540px;
+    margin: 30px auto;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 24px #0002;
+    padding: 24px 36px 40px 36px;
+  }
+  
+  .quiz-container, .result-container {
+    margin-top: 32px;
+  }
+  
+  .option-btn {
+    width: 100%;
+    background: #d6f5db;
+    border: 1px solid #38a169;
+    border-radius: 6px;
+    font-size: 1rem;
+    padding: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.15s;
+  }
+  .option-btn:hover {
+    background: #b4ecd9;
+  }
+  .progress {
+    margin-top: 16px;
+  }
+  input[type="password"] {
+    font-size: 1rem;
+  }
+  
+  ul {
+    list-style: none;
+  }
