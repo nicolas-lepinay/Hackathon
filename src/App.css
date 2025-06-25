@@ -1,38 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+body {
+    position: relative;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #e8f5e9 0%, #b7e6d1 100%);
+  }
+  
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0; width: 100vw; height: 100vh;
+    z-index: -1;
+    background: url('../public/background.jpg') center center / cover no-repeat;
+    opacity: 0.3;
+    pointer-events: none;
+  }
+
 .App {
-    font-family: 'Segoe UI', Arial, sans-serif;
-    max-width: 540px;
-    margin: 30px auto;
-    background: #fff;
-    border-radius: 12px;
-    box-shadow: 0 6px 24px #0002;
-    padding: 24px 36px 40px 36px;
-  }
-  
-  .quiz-container, .result-container {
-    margin-top: 32px;
-  }
-  
-  .option-btn {
-    width: 100%;
-    background: #d6f5db;
-    border: 1px solid #38a169;
-    border-radius: 6px;
-    font-size: 1rem;
-    padding: 12px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: background 0.15s;
-  }
-  .option-btn:hover {
-    background: #b4ecd9;
-  }
-  .progress {
-    margin-top: 16px;
-  }
-  input[type="password"] {
-    font-size: 1rem;
-  }
-  
-  ul {
-    list-style: none;
-  }
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  max-width: 520px;
+  margin: 48px auto 0 auto;
+  background: #fff;
+  border-radius: 24px;
+  box-shadow: 0 12px 32px #81c78444, 0 1.5px 4px #0002;
+  padding: 32px 36px 40px 36px;
+  position: relative;
+  z-index: 1;
+}
+
+h1 {
+  color: #357a38;
+  letter-spacing: -1px;
+  font-weight: 800;
+  font-size: 2.2rem;
+  text-align: center;
+  margin-bottom: 18px;
+  text-shadow: 0 2px 8px #a5d6a744;
+}
+
+h2 {
+  color: #2e7031;
+  font-size: 1.38rem;
+  margin-bottom: 14px;
+  margin-top: 0;
+  font-weight: 700;
+}
+
+h3 {
+  color: #388e3c;
+  margin-bottom: 10px;
+  margin-top: 22px;
+  font-size: 1.11rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.quiz-container,
+.result-container {
+  margin-top: 32px;
+  border-radius: 16px;
+  background: #f5faf6;
+  box-shadow: 0 2px 16px #a5d6a733;
+  padding: 30px 22px 18px 22px;
+  min-height: 260px;
+}
+
+.question p {
+  font-size: 1.08rem;
+  color: #41644a;
+}
+
+.options {
+  list-style: none;
+  padding: 0;
+  margin-top: 22px;
+  margin-bottom: 16px;
+}
+
+.option-btn {
+  width: 100%;
+  background: linear-gradient(90deg, #c5e1a5 0%, #a5d6a7 100%);
+  border: none;
+  border-radius: 12px;
+  font-size: 1.06rem;
+  padding: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 8px;
+  color: #234b25;
+  transition: background 0.14s, box-shadow 0.14s, transform 0.09s;
+  box-shadow: 0 2px 8px #a5d6a755;
+  outline: none;
+}
+.option-btn:hover, .option-btn:focus {
+  background: linear-gradient(90deg, #81c784 0%, #aed581 100%);
+  box-shadow: 0 6px 16px #388e3c22;
+  transform: translateY(-2px) scale(1.01);
+}
+
+.progress {
+  margin-top: 20px;
+  margin-bottom: 0;
+  text-align: center;
+}
+progress {
+  width: 92%;
+  height: 14px;
+  border-radius: 9px;
+  overflow: hidden;
+  appearance: none;
+  background-color: #d0ecd4;
+  box-shadow: 0 2px 8px #81c78433 inset;
+}
+progress::-webkit-progress-bar {
+  background-color: #d0ecd4;
+  border-radius: 9px;
+}
+progress::-webkit-progress-value {
+  background: linear-gradient(90deg, #81c784 0%, #388e3c 100%);
+  border-radius: 9px;
+}
+progress::-moz-progress-bar {
+  background: linear-gradient(90deg, #81c784 0%, #388e3c 100%);
+  border-radius: 9px;
+}
+progress[value] {
+  color: #388e3c;
+}
+
+input[type="password"], input[type="text"] {
+  font-size: 1rem;
+  padding: 9px 11px;
+  border-radius: 8px;
+  border: 1px solid #b2dfdb;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  outline: none;
+  width: 70%;
+  background: #e6f5ea;
+  transition: border-color 0.15s;
+}
+input[type="password"]:focus, input[type="text"]:focus {
+  border-color: #388e3c;
+}
+
+button {
+  border: none;
+  background: #81c784;
+  color: #18542a;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 10px 25px;
+  border-radius: 9px;
+  margin-top: 7px;
+  cursor: pointer;
+  transition: background 0.12s, color 0.12s;
+}
+button:disabled {
+  opacity: 0.6;
+  background: #bdbdbd;
+  color: #888;
+  cursor: default;
+}
+button:hover:not(:disabled), button:focus:not(:disabled) {
+  background: #388e3c;
+  color: #fff;
+}
+
+.ai-result {
+  background: #e7f9ed;
+  padding: 18px 18px 13px 18px;
+  margin-top: 22px;
+  border-radius: 14px;
+  font-size: 1.09rem;
+  color: #205e37;
+  box-shadow: 0 1.5px 5px #388e3c11;
+  word-break: break-word;
+  transition: box-shadow 0.11s;
+  line-height: 1.7;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c8e6c9;
+  border-radius: 10px;
+}
+::-webkit-scrollbar {
+  width: 10px;
+  background: #f5faf6;
+}

@@ -30,6 +30,12 @@ function App() {
 
   return (
     <div className="App">
+        <img
+            src="https://cdn-icons-png.flaticon.com/512/2724/2724637.png"
+            alt="Feuille écologie"
+            style={{ width: 56, margin: '0 auto 16px auto', display: 'block' }}
+        />
+
       <h1>Quiz Écologique</h1>
       {currentStep === 'quiz' && (
         <Quiz
